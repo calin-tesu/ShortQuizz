@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">ShortQuizz</string>
+
+    <!-- Quizzes strings -->
+    <string name="q1">1. Who said: \"To be or not to be\"?</string>
+    <string name="q2">2. Identify this painting.</string>
+    <string name="q3">3. Which countries are in Europe?</string>
+    <string name="q4">4. Write the most popular mobile OS.</string>
+    <string name="q5">5. What is the capital city of Romania?</string>
+
+    <!-- Answers strings -->
+    <string name="q1A">Vlad the Impaler</string>
+    <string name="q1B">Marshall McLuhan</string>
+    <string name="q1C">Faust</string>
+    <string name="q1D">Hamlet</string>
+
+    <string name="q2A">Walt Disney - Snow White</string>
+    <string name="q2B"> Sandro Botticelli - Birth of Venus</string>
+    <string name="q2C">Leonardo Da Vinci - Mona Lisa</string>
+    <string name="q2D">Pablo Picasso - Les Demoiselles d\'Avignon</string>
+
+    <string name="q3A">Romania</string>
+    <string name="q3B">India</string>
+    <string name="q3C">Spain</string>
+    <string name="q3D">China</string>
+
+    <string name="q4Answer">Android</string>
+    <string name="q4Hint">Enter text here</string>
+
+    <string name="q5A">Bucharest</string>
+    <string name="q5B">Milky Way</string>
+    <string name="q5C">Hong Kong</string>
+    <string name="q5D">Machu Picchu</string>
+
+    <string name="Submit">Submit</string>
+    <string name="quizzes">Quizzes</string>
+    <string name="enter_your_name">Enter your name:</string>
+    <string name="start">Start</string>
+    <string name="your_score">Your score is:</string>
+    <string name="share">Share</string>
+    <string name="scoreMessage">\u0020your score at ShortQuizz is\u0020</string>
+</resources>

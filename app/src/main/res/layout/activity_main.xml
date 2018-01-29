@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.example.android.shortquizz.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+    <TextView
+        android:fontFamily="@font/bangers"
+        android:text= "@string/quizzes"
+        style="@style/TitleText"/>
+
+    <TextView
+        android:text="@string/enter_your_name"
+        style="@style/StartText"/>
+
+    <EditText
+        android:id="@+id/playerName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/top_margin"
+        android:inputType="textCapWords"
+        android:imeOptions="actionDone"/>
+
+    <Button
+        android:text="@string/start"
+        style="@style/StartText"
+        android:onClick="startGame"/>
+
+    </LinearLayout>
+
+</ScrollView>
