@@ -10,7 +10,10 @@ import android.widget.RadioButton;
 
 public class Quizz extends AppCompatActivity {
 
+    //Store the number of correct answers
     int score;
+
+    //Store the RadioButton's, CheckBoxes and EditText with the correct answers
     private RadioButton q1D, q2B, q5A;
     private CheckBox q3A, q3B, q3C, q3D;
     private EditText q4A;
@@ -35,33 +38,34 @@ public class Quizz extends AppCompatActivity {
      */
     public void calculateScore(View view) {
 
+        //Reinitialise score for the case in which the back button is pressed in the ResultsActivity to pick different answers
         score = 0;
 
         //** Calculate quizz 1
         if (q1D.isChecked()) {
-            score += 1;
+            score++;
         }
 
         //** Calculate quizz 2
         if (q2B.isChecked()) {
-            score += 1;
+            score++;
         }
 
         //**Calculate quizz 3
         if (q3A.isChecked() && q3C.isChecked() && !q3B.isChecked() && !q3D.isChecked()) {
-            score += 1;
+            score++;
         }
 
         //** Calculate quizz 4
         String answer = q4A.getText().toString();
         String corectAnswer = getString(R.string.q4Answer);
         if (answer.equals(corectAnswer)) {
-            score += 1;
+            score++;
         }
 
         //** Calculate quizz 5
         if (q5A.isChecked()) {
-            score += 1;
+            score++;
         }
 
         //** Start ResultsActivity

@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    //** This method start the Quizz activity and pass the player name to other activitis
+    //** This method start the Quizz activity and pass the player name to other activities
     public void startGame(View view) {
         EditText name = findViewById(R.id.playerName);
         String playerName = name.getText().toString();

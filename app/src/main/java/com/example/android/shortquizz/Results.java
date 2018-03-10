@@ -17,7 +17,7 @@ public class Results extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_results);
 
-        //** Star rating of score and display a Toast with the number of correct answers
+        //Star rating of score and display a Toast with the number of correct answers
         Intent Results = getIntent();
         correctAnswers = Results.getIntExtra("correct_answers", 0);
         playerName = Results.getStringExtra("player_name");
@@ -26,7 +26,7 @@ public class Results extends AppCompatActivity {
         Toast.makeText(this, playerName + getString(R.string.scoreMessage) + String.valueOf(correctAnswers), Toast.LENGTH_SHORT).show();
     }
 
-    //** Share the results with other apps
+    //Share the results with other apps
     public void shareResults(View view) {
         String scoreMessage = playerName + getString(R.string.scoreMessage) + String.valueOf(correctAnswers);
         Intent shareScore = new Intent(Intent.ACTION_SEND);
