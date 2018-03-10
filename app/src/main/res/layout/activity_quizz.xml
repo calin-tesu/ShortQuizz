@@ -20,7 +20,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/q1"
+                android:text="@string/question1"
                 android:textSize="@dimen/smallText" />
 
             <ImageView
@@ -37,23 +37,23 @@
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/q1A" />
+                    android:text="@string/question1_answer1" />
 
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/q1B" />
+                    android:text="@string/question1_answer2" />
 
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/q1C" />
+                    android:text="@string/question1_answer3" />
 
                 <RadioButton
-                    android:id="@+id/q1D"
+                    android:id="@+id/checkQuestion1Answer3Hamlet"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/q1D" />
+                    android:text="@string/question1_answer4" />
 
             </RadioGroup>
 
@@ -74,7 +74,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/q2"
+                android:text="@string/question2"
                 android:textSize="@dimen/smallText" />
 
             <ImageView
@@ -91,23 +91,23 @@
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/q2A" />
+                    android:text="@string/question2_answer1" />
 
                 <RadioButton
-                    android:id="@+id/q2B"
+                    android:id="@+id/radioQuestion2Answer2Botticelli"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/q2B" />
-
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/q2C" />
+                    android:text="@string/question2_answer2" />
 
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/q2D" />
+                    android:text="@string/question2_answer3" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/question2_answer4" />
 
             </RadioGroup>
 
@@ -128,7 +128,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/q3"
+                android:text="@string/question3"
                 android:textSize="@dimen/smallText" />
 
             <ImageView
@@ -145,37 +145,36 @@
                 android:layout_marginTop="@dimen/top_margin">
 
                 <CheckBox
-                    android:id="@+id/q3A"
+                    android:id="@+id/checkQuestion3Answer1Romania"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentTop="true"
-                    android:text="@string/q3A" />
+                    android:text="@string/question3_answer1" />
 
                 <CheckBox
-                    android:id="@+id/q3B"
+                    android:id="@+id/checkQuestion3Answer2India"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
                     android:layout_alignParentTop="true"
                     android:paddingLeft="5dp"
-                    android:text="@string/q3B" />
+                    android:text="@string/question3_answer2" />
 
                 <CheckBox
-                    android:id="@+id/q3C"
+                    android:id="@+id/checkQuestion3Answer3Spain"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentLeft="true"
-                    android:layout_below="@+id/q3A"
-                    android:text="@string/q3C" />
+                    android:layout_below="@+id/checkQuestion3Answer1Romania"
+                    android:text="@string/question3_answer3" />
 
                 <CheckBox
-                    android:id="@+id/q3D"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:id="@+id/checkQuestion3Answer4China"
+                    style="@style/CheckBoxStyle"
                     android:layout_alignParentRight="true"
-                    android:layout_below="@+id/q3B"
-                    android:text="@string/q3D" />
+                    android:layout_below="@+id/checkQuestion3Answer2India"
+                    android:text="@string/question3_answer4" />
 
             </RelativeLayout>
 
@@ -196,7 +195,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/q4"
+                android:text="@string/question4"
                 android:textSize="@dimen/smallText" />
 
             <ImageView
@@ -207,11 +206,11 @@
                 android:src="@drawable/smashed_phone" />
 
             <EditText
-                android:id="@+id/q4A"
+                android:id="@+id/editQuestion4Answer1Android"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/top_margin"
-                android:hint="@string/q4Hint"
+                android:hint="@string/question4_hint"
                 android:imeOptions="actionDone"
                 android:inputType="textCapWords" />
 
@@ -233,7 +232,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/q5"
+                android:text="@string/question5"
                 android:textSize="@dimen/smallText" />
 
             <ImageView
@@ -248,25 +247,25 @@
                 android:layout_marginTop="@dimen/top_margin">
 
                 <RadioButton
-                    android:id="@+id/q5A"
+                    android:id="@+id/radioQuestion5Answer1Bucharest"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/q5A" />
+                    android:text="@string/question5_answer1" />
 
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/q5B" />
+                    android:text="@string/question5_answer2" />
 
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/q5C" />
+                    android:text="@string/question5_answer3" />
 
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/q5D" />
+                    android:text="@string/question5_answer4" />
 
             </RadioGroup>
 

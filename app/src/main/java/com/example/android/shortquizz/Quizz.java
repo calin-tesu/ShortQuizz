@@ -11,7 +11,9 @@ import android.widget.RadioButton;
 public class Quizz extends AppCompatActivity {
 
     //Store the number of correct answers
-    int score;
+    int correctAnswers;
+    //Store the number of wrong answers
+    int wrongAnswers;
 
     //Store the RadioButton's, CheckBoxes and EditText with the correct answers
     private RadioButton q1D, q2B, q5A;
@@ -23,14 +25,14 @@ public class Quizz extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quizz);
 
-        q1D = findViewById(R.id.q1D);
-        q2B = findViewById(R.id.q2B);
-        q3A = findViewById(R.id.q3A);
-        q3B = findViewById(R.id.q3B);
-        q3C = findViewById(R.id.q3C);
-        q3D = findViewById(R.id.q3D);
-        q4A = findViewById(R.id.q4A);
-        q5A = findViewById(R.id.q5A);
+        q1D = findViewById(R.id.checkQuestion1Answer3Hamlet);
+        q2B = findViewById(R.id.radioQuestion2Answer2Botticelli);
+        q3A = findViewById(R.id.checkQuestion3Answer1Romania);
+        q3B = findViewById(R.id.checkQuestion3Answer2India);
+        q3C = findViewById(R.id.checkQuestion3Answer3Spain);
+        q3D = findViewById(R.id.checkQuestion3Answer4China);
+        q4A = findViewById(R.id.editQuestion4Answer1Android);
+        q5A = findViewById(R.id.radioQuestion5Answer1Bucharest);
     }
 
     /**
@@ -38,42 +40,54 @@ public class Quizz extends AppCompatActivity {
      */
     public void calculateScore(View view) {
 
-        //Reinitialise score for the case in which the back button is pressed in the ResultsActivity to pick different answers
-        score = 0;
+        //Reinitialise correctAnswers for the case in which the back button is pressed in the ResultsActivity to pick different answers
+        correctAnswers = 0;
+        wrongAnswers = 0;
 
         //** Calculate quizz 1
         if (q1D.isChecked()) {
-            score++;
+            correctAnswers++;
+        } else {
+            wrongAnswers++;
         }
 
         //** Calculate quizz 2
         if (q2B.isChecked()) {
-            score++;
+            correctAnswers++;
+        } else {
+            wrongAnswers++;
         }
 
         //**Calculate quizz 3
         if (q3A.isChecked() && q3C.isChecked() && !q3B.isChecked() && !q3D.isChecked()) {
-            score++;
+            correctAnswers++;
+        } else {
+            wrongAnswers++;
         }
 
         //** Calculate quizz 4
         String answer = q4A.getText().toString();
-        String corectAnswer = getString(R.string.q4Answer);
+        String corectAnswer = getString(R.string.question4_answer);
         if (answer.equals(corectAnswer)) {
-            score++;
+            correctAnswers++;
+        } else {
+            wrongAnswers++;
         }
 
         //** Calculate quizz 5
         if (q5A.isChecked()) {
-            score++;
+            correctAnswers++;
+        } else {
+            wrongAnswers++;
         }
 
         //** Start ResultsActivity
         Intent Quizz = getIntent();
         String playerName = Quizz.getStringExtra("player_name");
         Intent Results = new Intent(this, com.example.android.shortquizz.Results.class);
-        Results.putExtra("correct_answers", score);
+        Results.putExtra("correct_answers", correctAnswers);
         Results.putExtra("player_name", playerName);
+        Results.putExtra("wrong_answers", wrongAnswers);
         startActivity(Results);
     }
 }

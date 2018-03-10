@@ -9,30 +9,30 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:gravity="center">
+        android:gravity="center"
+        android:orientation="vertical">
 
-    <TextView
-        android:fontFamily="@font/bangers"
-        android:text= "@string/quizzes"
-        style="@style/TitleText"/>
+        <TextView
+            style="@style/TitleText"
+            android:fontFamily="@font/bangers"
+            android:text="@string/quizzes" />
 
-    <TextView
-        android:text="@string/enter_your_name"
-        style="@style/StartText"/>
+        <TextView
+            style="@style/StartText"
+            android:text="@string/enter_your_name" />
 
-    <EditText
-        android:id="@+id/playerName"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="@dimen/top_margin"
-        android:inputType="textCapWords"
-        android:imeOptions="actionDone"/>
+        <EditText
+            android:id="@+id/playerName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/top_margin"
+            android:imeOptions="actionDone"
+            android:inputType="textCapWords" />
 
-    <Button
-        android:text="@string/start"
-        style="@style/StartText"
-        android:onClick="startGame"/>
+        <Button
+            style="@style/StartText"
+            android:onClick="startGame"
+            android:text="@string/start" />
 
     </LinearLayout>
 
